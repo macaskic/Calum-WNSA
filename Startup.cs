@@ -32,6 +32,7 @@ namespace WNSA
             (Configuration.GetConnectionString("WNSAConnection")));
             
             services.AddControllers();
+            // Change the data Source
             services.AddScoped<IWNSARepo, MockWNSARepo>();  // Dependency injection
         //    services.AddScoped<IWNSARepo, SqlWNSARepo>();  
 
